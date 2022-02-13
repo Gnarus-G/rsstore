@@ -4,7 +4,11 @@ type UnsubFunc = () => void;
 
 type UpdateFunc<T> = (prev: T) => T;
 
-export class Store<T> {
+export interface IStore<T> {
+  subscribe(subscriber: Subscriber<T>): UnsubFunc;
+}
+
+export class Store<T> implements IStore<T> {
   protected subscribers = new Set<Subscriber<T>>();
 
   constructor() {
