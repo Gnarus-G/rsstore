@@ -8,6 +8,7 @@
   "description": "A simple pub/sub store with a simple api.",
   "scripts": {
     "dev": "npm run dev -ws",
+    "build": "npm run build -ws",
     "test:watch": "npm test -ws -- --watch",
     "test": "npm test -ws"
   },

@@ -4,6 +4,6 @@
     "jsx": "react",
     "outDir": "dist"
   },
-  "include": ["."],
-  "exclude": ["**/*.test.ts"]
+  "include": ["*.ts", "*.tsx"],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx"]
 }
