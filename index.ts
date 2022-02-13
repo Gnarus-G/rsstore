@@ -17,6 +17,10 @@ export class Store<T> {
       this.subscribers.delete(subscriber);
     };
   }
+
+  protected notify(state: T) {
+    this.subscribers.forEach((s) => s(state));
+  }
 }
 
 export class WritabeStore<T> extends Store<T> {
@@ -28,12 +32,12 @@ export class WritabeStore<T> extends Store<T> {
 
   set(state: T) {
     this.state = state;
-    this.subscribers.forEach((s) => s(state));
+    this.notify(state);
   }
 
   update(updater: UpdateFunc<T>) {
     this.state = updater(this.state);
-    this.subscribers.forEach((s) => s(this.state));
+    this.notify(this.state);
   }
 }
 

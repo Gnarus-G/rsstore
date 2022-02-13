@@ -1,14 +1,10 @@
 import createStore from ".";
+import { getMockSubsribers } from "./testUtils";
 
 describe("createStore", () => {
   const store = createStore({
     data: "value",
   });
-
-  const getMockSubsribers = () =>
-    Array(10)
-      .fill(true)
-      .map(() => jest.fn());
 
   it("calls back all subscribers on update", () => {
     const newState = { data: "new value" };
