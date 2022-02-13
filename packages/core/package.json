@@ -13,6 +13,14 @@
     "test:watch": "jest --watch",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gnarus-G/rsstore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gnarus-G/rsstore/issues"
+  },
+  "homepage": "https://github.com/Gnarus-G/rsstore#readme",
   "keywords": [
     "store",
     "flux",
