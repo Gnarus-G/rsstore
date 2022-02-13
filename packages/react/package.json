@@ -1,0 +1,44 @@
+{
+  "name": "@rsstore/react",
+  "version": "0.0.1",
+  "description": "An adapter of @rsstore/core with React.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@rsstore/core": "*"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gnarus-G/rsstore.git"
+  },
+  "keywords": [
+    "simple",
+    "store",
+    "react",
+    "context",
+    "hooks",
+    "pubsub"
+  ],
+  "author": "Gnarus-G",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gnarus-G/rsstore/issues"
+  },
+  "homepage": "https://github.com/Gnarus-G/rsstore#readme",
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11"
+  }
+}
