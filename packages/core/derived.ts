@@ -1,4 +1,4 @@
-import { IStore, Store } from ".";
+import { IStore, Store } from "./core";
 
 export class DerivedStore<T, R> implements IStore<R> {
   constructor(private original: Store<T>, private transform: (state: T) => R) {}
@@ -10,7 +10,7 @@ export class DerivedStore<T, R> implements IStore<R> {
   }
 }
 
-export default function derived<T, R>(
+export function derived<T, R>(
   store: Store<T>,
   transform: (state: T) => R
 ): IStore<R> {

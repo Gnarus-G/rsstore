@@ -1,5 +1,5 @@
-import createStore from ".";
-import derived from "./derived";
+import { createStore } from ".";
+import { derived } from ".";
 
 describe("derivedStore", () => {
   const store = createStore(0);

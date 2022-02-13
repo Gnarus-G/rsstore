@@ -1,0 +1,22 @@
+{
+  "name": "@rsstore/core",
+  "version": "0.0.1",
+  "description": "The core of rsstore. Where the store is defined and implemented.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only .",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "keywords": [
+    "store",
+    "flux",
+    "reactive",
+    "pubsub"
+  ],
+  "author": "Gnarus-G",
+  "license": "MIT"
+}

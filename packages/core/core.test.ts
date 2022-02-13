@@ -1,4 +1,4 @@
-import createStore from ".";
+import { createStore } from ".";
 import { getMockSubsribers } from "./testUtils";
 
 describe("createStore", () => {

@@ -45,6 +45,6 @@ export class WritabeStore<T> extends Store<T> {
   }
 }
 
-export default function createStore<T>(initialState: T) {
+export function createStore<T>(initialState: T) {
   return new WritabeStore(initialState);
 }
